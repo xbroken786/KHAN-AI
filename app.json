@@ -1,5 +1,5 @@
 {
-  "name": "KHAN-MD",
+  "name": "KHANX-AI",
   "description": "Javascript WhatsApp bot made by Jᴀᴡᴀᴅ TᴇᴄʜX",
   "logo": "https://files.catbox.moe/hzagwo.jpg",
   "keywords": ["bot"],
@@ -9,16 +9,43 @@
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true
+      "value": ""
     },  
+    
+     "PREFIX": {
+      "description": "set prifix for your bot like (.*).",
+      "required": false
+      "value": "."
+    },
+    
+        "MODE": {
+      "description": "set public or private bot.",
+      "required": false
+      "value": "public"
+    },
+    
+        "AUTO_READ_STATUS": {
+      "description": "make false or true for status auto seen.",
+      "required": false
+      "value": "true"
+    },
+    
+        "SUDO_NB": {
+      "description": "Put sudo or owner number.",
+      "required": false
+      "value": "92344814"
+    },
 
     "ALIVE_IMG": {
       "description": "Put your alive img here.",
-      "required": true
+      "required": false
+      "value": "https://files.catbox.moe/hzagwo.jpg"
     },
     
     "ALIVE_MSG": {
       "description": "Put your alive msg here.",
-      "required": true
+      "required": false
+      "value": "Zinda Houn Yar"
     }   
 },
 
