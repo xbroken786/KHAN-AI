@@ -7,8 +7,12 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "",
   // add your Session Id 
+PREFIX: process.env.PREFIX || ".",
+  // add your prifix for bot
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/hzagwo.jpg",
   // add img for alive msg
+ALIVE_MSG: process.env.ALIVE_MSG || "*👋 ||HEY ${pushname} DEAR I AM ALIVE NOW...||*\n\n`🪄🛠️MINE WHATSAPP CHANEL ;`\n\n_ https://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t 🇵🇰_\n\n`"
+  // set an alive msg for bot  
 SUDO_NB: process.env.SUDO_NB || "923448149931",
   // add your sudo number 
 MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
