@@ -12,7 +12,6 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 let dec = `
-
 ╭━━━〔 *KHANX-AI* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *Jᴀᴡᴀᴅ TᴇᴄʜX*
