@@ -11,7 +11,7 @@ PREFIX: process.env.PREFIX || ".",
   // add your prifix for bot
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/hzagwo.jpg",
   // add img for alive msg
-ALIVE_MSG: process.env.ALIVE_MSG || "*👋 ||HEY ${pushname} DEAR I AM ALIVE NOW...||*\n\n`🪄🛠️MINE WHATSAPP CHANEL ;`\n\n_ https://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t 🇵🇰_\n\n`"
+ALIVE_MSG: process.env.ALIVE_MSG || "*👋 ||HEY ${pushname} DEAR I AM ALIVE NOW...||*\n\n`🪄🛠️MINE WHATSAPP CHANEL ;`\n\n_ https://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t 🇵🇰_\n\n`",
   // set an alive msg for bot  
 SUDO_NB: process.env.SUDO_NB || "923448149931",
   // add your sudo number 
