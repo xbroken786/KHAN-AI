@@ -15,7 +15,6 @@ let dec = `
 ╭━━━〔 *KHANX-AI* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *Jᴀᴡᴀᴅ TᴇᴄʜX*
-┃★│ Number: *+923448149931*
 ┃★│ Baileys : *Multi Device*
 ┃★│ Type : *NodeJs*
 ┃★│ Platform : *Heroku*
@@ -87,7 +86,8 @@ let dec = `
 ┃◆ .𝙽𝚎𝚠𝚜
 ┃◆ .𝙼𝚘𝚟𝚒𝚎
 ╰━━━━━━━━━━━━⪼
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX
+https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX 🇵🇰
 `
 await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/hzagwo.jpg`},caption:dec},{quoted:mek});
 
