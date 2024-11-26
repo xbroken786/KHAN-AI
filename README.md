@@ -85,6 +85,5 @@ Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use
 ***
 <h2 align="left">Notice ℹ️</h2>
 <p style="text-align: center; font-size: 1.2em;">
-  Not For Sale - If any plugin's code is obfuscated, you do not have permission to edit it in any form. Please remember to give credit if you are using or re-uploading my plugins/files. Wishing you a wonderful day ahead! @Malvin Credits For Base
-</p>
+  Not For Sale - If any plugin's code is obfuscated, you do not have permission to edit it in any form. Please remember to give credit if you are using or re-uploading my plugins/files. Wishing you a wonderful day ahead!</p>
     
