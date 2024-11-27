@@ -11,8 +11,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let dec = `
-╭━━━〔 *KHANX-AI* 〕━━━┈⊷
+let dec = `╭━━━〔 *KHANX-AI* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *Jᴀᴡᴀᴅ TᴇᴄʜX*
 ┃★│ Baileys : *Multi Device*
