@@ -23,9 +23,14 @@ Start by forking this repository to your own GitHub account. Click the button be
 
 Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use VPN
 
- > Get Pair Code Below 👇 
+ > Get Pair Via (Server 1)
 
-<a href='https://back-natividad-pakontop-5f2f7654.koyeb.app/' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-green?style=for-the-badge&logo=opencv&logoColor=red'/></a>
+<a href='https://back-natividad-pakontop-5f2f7654.koyeb.app/' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-yellow?style=for-the-badge&logo=opencv&logoColor=red'/></a>
+<br>
+
+ > Get Pair Via (Server 2)
+
+<a href='https://khanx-pair.onrender.com' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-green?style=for-the-badge&logo=opencv&logoColor=black'/></a>
 <br>
 
 ***
