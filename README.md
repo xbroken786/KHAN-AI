@@ -25,7 +25,7 @@ Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use
 
  > Get Pair Code Below 👇 
 
-<a href='https://impossible-yolane-pair-khan-49071084.koyeb.app/' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-green?style=for-the-badge&logo=opencv&logoColor=red'/></a>
+<a href='https://back-natividad-pakontop-5f2f7654.koyeb.app/' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-green?style=for-the-badge&logo=opencv&logoColor=red'/></a>
 <br>
 
 ***
