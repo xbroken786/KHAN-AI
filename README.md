@@ -76,19 +76,25 @@ Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use
   
 ***
 
-<h2 align="left">Reminder 🔮</h2>
-<p style="text-align: center; font-size: 1.2em;">
-  <strong>Important:</strong> This bot is not affiliated with <em>WhatsApp Inc.</em> 
-  Misusing this bot may result in a <strong>ban</strong> on your WhatsApp account. 
-  Please note that accounts can only be unbanned once.
-</p>
-<p style="text-align: center; font-size: 1.2em;">
-  I am not responsible for any actions leading to the banning of your account. 
-  Use at your own risk, keeping this warning in mind.
-</p>
+## 🌐 WhatsApp Channel 
+
+Stay connected with the latest updates and community by joining our official WhatsApp group and channel. You can also contact the owner directly.
+
+[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j)
 
 ***
+
+<h2 align="left">Reminder ⚠️</h2>
+<p style="text-align: center; font-size: 1.2em;">
+
+- **Disclaimer:** This bot is not affiliated with `WhatsApp Inc.`. Use it at your own risk.
+- Misusing the bot may result in your `WhatsApp` account being banned. Note that you can only unban your account once.
+- I am not responsible for any bans or misuse of the bot. Please keep this warning in mind before proceeding.
+
+---
+
 <h2 align="left">Notice ℹ️</h2>
 <p style="text-align: center; font-size: 1.2em;">
   Not For Sale - If any plugin's code is obfuscated, you do not have permission to edit it in any form. Please remember to give credit if you are using or re-uploading my plugins/files. Wishing you a wonderful day ahead!</p>
-    
+  
+---    
