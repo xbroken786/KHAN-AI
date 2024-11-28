@@ -11,7 +11,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let dec = ` *Hello there KHANX-AI User! 👋🏻* 
+let dec = `*Hello there KHANX-AI User! 👋🏻* 
 
 > KHANX-Ai is a beta version of KHAN-AI also it provide enhanced functionality to users
 
@@ -19,11 +19,12 @@ let dec = ` *Hello there KHANX-AI User! 👋🏻*
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t
+https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
 
- Dont forget to give star 🌟 to repo ⬇️
+Dont forget to give star to repo ⬇️
 
-https://github.com/JawadYTX/KHANX-AI `
+https://github.com/JawadYTX/KHANX-AI`
+    
 await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/hzagwo.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
