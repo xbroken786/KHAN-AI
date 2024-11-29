@@ -4,7 +4,7 @@ cmd({
     pattern: "menu",
     desc: "menu the bot",
     category: "menu",
-    react: "🇵🇰",
+    react: "⚡",
     filename: __filename
 },
 
@@ -85,9 +85,10 @@ let dec = `╭━━━〔 *KHANX-AI* 〕━━━┈⊷
 ┃◆ .𝙽𝚎𝚠𝚜
 ┃◆ .𝙼𝚘𝚟𝚒𝚎
 ╰━━━━━━━━━━━━⪼
-https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX
-`
+╭━━❮*𝙲𝙷𝙰𝙽𝙽𝙴𝙻*❯━┈⊷
+┃https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
+╰────────────────··๏
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`
 await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/hzagwo.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
