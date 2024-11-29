@@ -1,32 +1,34 @@
-const { cmd, commands } = require('../command');
+const {cmd , commands} = require('../command')
 
 cmd({
-    pattern: "repo|sc|GitHub",  // Added multiple patterns separated by '|'
-    desc: "Get information about the bot's repository",
+    pattern: "sc",
+    desc: "sc the bot",
     category: "main",
-    react: "📡",
+    react: "👨‍💻",
     filename: __filename
 },
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        let dec = `*Hello there User ${pushname}! 👋🏻* 
 
-> KHANX-Ai is a beta version of KHAN-AI and provides enhanced functionality to users.
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
 
-*Thanks for using KHAN-MD 🇵🇰* 
+let dec = `*Hello there KHANX-AI User! 👋🏻* 
+
+> KHANX-Ai is a beta version of KHAN-AI also it provide enhanced functionality to users
+
+ *Thanks for using KHAN-MD 🇵🇰* 
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t
+https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
 
-Don't forget to fork the repo ⬇️
+Dont forget to give star to repo ⬇️
 
-https://github.com/JawadYTX/KHANX-AI
-`;
-        await conn.sendMessage(from, { image: { url: `https://files.catbox.moe/hzagwo.jpg` }, caption: dec }, { quoted: mek });
+https://github.com/JawadYTX/KHANX-AI`
+    
+await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/hzagwo.jpg`},caption:dec},{quoted:mek});
 
-    } catch (e) {
-        console.log(e);
-        reply(`An error occurred: ${e.message}`);
-    }
-});
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
