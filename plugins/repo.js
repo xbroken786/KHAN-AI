@@ -1,7 +1,8 @@
 const {cmd , commands} = require('../command')
 
 cmd({
-    pattern: "sc",
+    pattern: "repo",
+    alias: ["sc","script","info"],
     desc: "sc the bot",
     category: "main",
     react: "👨‍💻",
