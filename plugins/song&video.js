@@ -3,7 +3,8 @@ const fg = require('api-dylux')
 const yts = require('yt-search')
 
 cmd({
-    pattern: "play",
+    pattern: "play2",
+    alias: ["ytmp3","audio"],
     desc: "download songs",
     category: "download",
     react: "🎵",
@@ -16,20 +17,21 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let desc = `*◆ KHANX-AI SONG DOWNLOADER ◆*
-
-| ➤ TITLE - ${data.title}
-
-| ➤ VIEWS - ${data.views}
-
-| ➤ DESCRIPTION - ${data.description}
-
-| ➤ TIME - ${data.timestamp}
-
-|➤ AGO - ${data.ago}
-
-> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX
-`
+let desc = `╭━━━〔 *KHANX-MD* 〕━━━┈⊷
+┃▸╭───────────
+┃▸┃๏ *MUSIC DOWNLOADER*
+┃▸└───────────···๏
+╰────────────────┈⊷
+╭━❮ *Download Audio* ❯━┈⊷
+┃▸╭─────────────·๏
+┃▸┃๏ *Tital* - ${data.title}
+┃▸┃๏ *Views* - ${data.views}
+┃▸┃๏ *Description* - ${data.description}
+┃▸┃๏ *Time* - ${data.timestamp}
+┃▸┃๏ *Ago* - ${data.ago}
+┃▸└────────────┈⊷
+╰━━━━━━━━━━━━━━━⪼
+> *© Pᴏᴡᴇʀᴇᴅ Bʏ Jᴀᴡᴀᴅ TᴇᴄʜX ♡*`
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
 //download audio
@@ -45,10 +47,11 @@ reply(`${e}`)
 }
 })
 
-//===========video-dl===========
+//===========darama-dl===========
 
 cmd({
-    pattern: "video",
+    pattern: "darama",
+    alias: ["video2","ytmp4"],    
     desc: "download video",
     category: "download",
     react: "🎥",
@@ -61,20 +64,21 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let des = `*◆ KHANX-AI VIDEO DOWNLOADER ◆*
-
-| ➤ TITLE - ${data.title}
-
-| ➤ VIEWS - ${data.views}
-
-| ➤ DESCRIPTION - ${data.description}
-
-| ➤ TIME - ${data.timestamp}
-
-| ➤ AGO - ${data.ago}
-
-> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX
-`
+let des = `╭━━━〔 *KHANX-MD* 〕━━━┈⊷
+┃▸╭───────────
+┃▸┃๏ *VIDEO DOWNLOADER*
+┃▸└───────────···๏
+╰────────────────┈⊷
+╭━❮ *Download Audio* ❯━┈⊷
+┃▸╭─────────────·๏
+┃▸┃๏ *Tital* - ${data.title}
+┃▸┃๏ *Views* - ${data.views}
+┃▸┃๏ *Description* - ${data.description}
+┃▸┃๏ *Time* - ${data.timestamp}
+┃▸┃๏ *Ago* - ${data.ago}
+┃▸└────────────┈⊷
+╰━━━━━━━━━━━━━━━⪼
+> *© Pᴏᴡᴇʀᴇᴅ Bʏ Jᴀᴡᴀᴅ TᴇᴄʜX ♡*`
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:des},{quoted:mek});
 
 //download video
