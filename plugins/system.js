@@ -3,8 +3,8 @@ const os = require("os")
 const {runtime} = require('../lib/functions')
 
 cmd({
-    pattern: "alive",
-    alias: ["status","botinfo"],
+    pattern: "alivex",
+    alias: ["runtime","uptime","status","botinfo"],
     desc: "check up time",
     category: "main",
     react: "📟",
