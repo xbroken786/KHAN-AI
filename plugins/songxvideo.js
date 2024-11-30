@@ -27,7 +27,8 @@ let desc = `╭━━━〔 *KHANX-MD* 〕━━━┈⊷
 ┃▸┃๏ *Tital* - ${data.title}
 ┃▸┃๏ *Views* - ${data.views}
 ┃▸┃๏ *Description* - ${data.description}
-┃▸┃๏ *Time* - ${data.timestamp}
+┃▸┃๏ *Duration:* ${data.timestamp}}
+┃▸┃๏ *Link* - ${data.url}
 ┃▸┃๏ *Ago* - ${data.ago}
 ┃▸└────────────┈⊷
 ╰━━━━━━━━━━━━━━━⪼
@@ -74,7 +75,8 @@ let des = `╭━━━〔 *KHANX-MD* 〕━━━┈⊷
 ┃▸┃๏ *Tital* - ${data.title}
 ┃▸┃๏ *Views* - ${data.views}
 ┃▸┃๏ *Description* - ${data.description}
-┃▸┃๏ *Time* - ${data.timestamp}
+┃▸┃๏ *Duration:* ${data.timestamp}}
+┃▸┃๏ *Link* - ${data.url}
 ┃▸┃๏ *Ago* - ${data.ago}
 ┃▸└────────────┈⊷
 ╰━━━━━━━━━━━━━━━⪼
