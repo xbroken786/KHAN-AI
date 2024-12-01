@@ -144,8 +144,8 @@ let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
 ┃https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
 ╰────────────────··๏
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`
-await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu},{quoted:mek})
-
+await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:dec},{quoted:mek});
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
