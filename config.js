@@ -9,8 +9,6 @@ SESSION_ID: process.env.SESSION_ID || "",
   // add your Session Id 
 PREFIX: process.env.PREFIX || ".",
   // add your prifix for bot
-BOT_NAME: process.env.BOT_NAME || "KHANX-AI",
-  // add your bot name 
 ANTI_LINK: process.env.ANTI_LINK || "false",
 // make anti link true,false for groups 
 ANTI_BAD: process.env.ANTI_BAD || "false",
