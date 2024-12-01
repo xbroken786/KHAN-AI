@@ -24,8 +24,6 @@ Start by forking this repository to your own GitHub account. Click the button be
 
 Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use VPN
 
- > *Get Pair Via **(Server 1)***
-
  <a href="https://khanx-pair.onrender.com/"><img title="KHAN-MD" src="https://img.shields.io/badge/PAIR-KHAN MD-h?color=red&style=for-the-badge&logo=whatsapp"></a>
 
 ---
