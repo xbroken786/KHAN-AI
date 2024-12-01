@@ -6,9 +6,9 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "",
-  // add your Session Id 
+// add your Session Id 
 PREFIX: process.env.PREFIX || ".",
-  // add your prifix for bot
+// add your prifix for bot
 ANTI_LINK: process.env.ANTI_LINK || "false",
 // make anti link true,false for groups 
 ANTI_BAD: process.env.ANTI_BAD || "false",
@@ -24,6 +24,12 @@ MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNf
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
   // make true or false status auto seen
 MODE: process.env.MODE || "public",
+  // make bot public or private 
+AUTO_STICKER: process.env.AUTO_STICKER || "false",
+  // make bot public or private 
+FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
+  // make bot public or private 
+AUTO_REPLY: process.env.AUTO_REPLY || "true",
   // make bot public or private 
 AUTO_VOICE: process.env.AUTO_VOICE || "true"
   // make auto voice false or true
