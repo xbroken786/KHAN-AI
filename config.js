@@ -17,7 +17,7 @@ ANTI_BAD: process.env.ANTI_BAD || "false",
 // false kr true Anti-Bad words 
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/hzagwo.jpg",
 // add img for alive msg
-ALIVE_MSG: process.env.ALIVE_MSG || "> Zinda Hun Since ${runtime(process.uptime())} ⚡",
+ALIVE_MSG: process.env.ALIVE_MSG || "> Zinda Hun Yar *KHAN-AI*⚡",
 // add alive msg here 
 SUDO_NB: process.env.SUDO_NB || "",
 // add your sudo number like 92314xxxxxx
