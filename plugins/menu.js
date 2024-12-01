@@ -143,7 +143,8 @@ let dec = `╭━━━〔 *KHANX-AI* 〕━━━┈⊷
 ┃https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
 ╰────────────────··๏
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`
-await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:dec},{quoted:mek});
+
+await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/hzagwo.jpg`},caption:dec},{quoted:mek});
     
 }catch(e){
 console.log(e)
