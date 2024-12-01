@@ -20,17 +20,17 @@ ALIVE_MSG: process.env.ALIVE_MSG || "> Zinda Hun Yar *KHAN-AI*⚡",
 SUDO_NB: process.env.SUDO_NB || "",
 // add your sudo number like 92314xxxxxx
 MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
-  // add your mongodb
+// add your mongodb
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
-  // make true or false status auto seen
+// make true or false status auto seen
 MODE: process.env.MODE || "public",
-  // make bot public or private 
-AUTO_STICKER: process.env.AUTO_STICKER || "true",
-  // true or false automatic sticker response 
-FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
-  // make true or false for recoding 
-AUTO_REPLY: process.env.AUTO_REPLY || "true",
-  // make it ture of false for auto reply  
+// make bot public or private 
+AUTO_REACT: process.env.AUTO_REACT || "true",
+// make this true or false for auto react on all msgs
+HEART_REACT: process.env.HEART_REACT || "true",
+// make this true or false for heart reactions only 
+OWNER_REACT: process.env.OWNER_REACT || "true",
+  // make it true or fasle for only react on owner msg only 
 AUTO_VOICE: process.env.AUTO_VOICE || "true"
   // make auto voice false or true
 };
