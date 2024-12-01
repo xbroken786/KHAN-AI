@@ -25,7 +25,7 @@ AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
   // make true or false status auto seen
 MODE: process.env.MODE || "public",
   // make bot public or private 
-AUTO_STICKER: process.env.AUTO_STICKER || "false",
+AUTO_STICKER: process.env.AUTO_STICKER || "true",
   // true or false automatic sticker response 
 FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
   // make true or false for recoding 
