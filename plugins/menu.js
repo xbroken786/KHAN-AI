@@ -12,14 +12,13 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
+let dec = `╭━━━〔 *KHANX-AI* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *Jᴀᴡᴀᴅ TᴇᴄʜX*
 ┃★│ Baileys : *Multi Device*
 ┃★│ Type : *NodeJs*
 ┃★│ Platform : *Heroku*
-┃★│ Mode : * ${config.MODE}*
-┃★│ Prefix : *[ Multi Prifix]*
+┃★│ Prefix : *[ Multi Prefix ]*
 ┃★│ Version : *1.0.0 Bᴇᴛᴀ*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
