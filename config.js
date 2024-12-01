@@ -9,7 +9,7 @@ SESSION_ID: process.env.SESSION_ID || "",
 // add your Session Id 
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot
-ANTI_LINK: process.env.ANTI_LINK || "false",
+ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 ANTI_BAD: process.env.ANTI_BAD || "false",
 // false kr true Anti-Bad words 
