@@ -26,11 +26,11 @@ AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",
   // make bot public or private 
 AUTO_STICKER: process.env.AUTO_STICKER || "false",
-  // make bot public or private 
+  // true or false automatic sticker response 
 FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
-  // make bot public or private 
+  // make true or false for recoding 
 AUTO_REPLY: process.env.AUTO_REPLY || "true",
-  // make bot public or private 
+  // make it ture of false for auto reply  
 AUTO_VOICE: process.env.AUTO_VOICE || "true"
   // make auto voice false or true
 };
