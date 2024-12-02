@@ -31,6 +31,6 @@ HEART_REACT: process.env.HEART_REACT || "true",
 // make this true or false for heart reactions only 
 OWNER_REACT: process.env.OWNER_REACT || "true",
   // make it true or fasle for only react on owner msg only 
-AUTO_VOICE: process.env.AUTO_VOICE || "true"
+AUTO_VOICE: process.env.AUTO_VOICE || "false"
   // make auto voice false or true
 };
