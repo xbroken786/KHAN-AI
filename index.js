@@ -181,7 +181,7 @@ if (!isReact && senderNumber === botNumber) {
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
-//====================react============================
+//===========Auto Voice============================
 
 if (config.AUTO_VOICE === 'true') {
 const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
@@ -189,6 +189,27 @@ let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
  }}
+
+//---------------Anti Bad----------------//
+
+        if (isGroup && config.ANTI_BAD) {
+            if (config.ANTI_BAD_WORDS) {
+                const badWords = config.ANTI_BAD_WORDS;
+                const bodyLower = body.toLowerCase();
+
+                // Check if the sender is an admin or the bot itself
+                if (!isAdmins && !isOwner) {
+                    for (const word of badWords) {
+                        if (bodyLower.includes(word.toLowerCase())) {
+                            // Notify the group and delete the message
+                            await conn.sendMessage(from, { text: "🚩 Don't use any bad words!" }, { quoted: mek });
+                            await conn.sendMessage(from, { delete: mek.key });
+                            return; // Exit early if a bad word is found
+                        }
+                    }
+                }
+            }
+        }        
 
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
