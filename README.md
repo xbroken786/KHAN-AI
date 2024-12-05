@@ -16,6 +16,13 @@
 
 ***
 
+<p align="center">
+<a href="https://github.com/JawadYTX"><img title="Author" src="https://img.shields.io/badge/JawadYTX-black?style=for-the-badge&logo=Github"></a> <a href="https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j"><img title="Author" src="https://img.shields.io/badge/CHANNEL-black?style=for-the-badge&logo=whatsapp"></a>
+
+ <p align="center"><img src="https://profile-counter.glitch.me/{KHAN-MD}/count.svg" alt="JawadYTX :: Visitor's Count" old_src="https://profile-counter.glitch.me/{JawadYTX}/count.svg" /></p>
+
+***
+
 ### 1. Fork This Repository
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
