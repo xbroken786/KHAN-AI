@@ -2,7 +2,7 @@
   <h1 align="center">KHANX-AI 1.0</h1>
 </p>
 
-> Updating Under Maintenance 
+> **`Updating` More Features**
 
 <p align="center">
   <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=KHANX-AI-+v1+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
