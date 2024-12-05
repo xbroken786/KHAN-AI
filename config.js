@@ -15,8 +15,6 @@ ALIVE_MSG: process.env.ALIVE_MSG || "> Zinda Hun Yar *KHAN-AI*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
-SUDO_NB: process.env.SUDO_NB || "",
-// add your sudo number like 92314xxxxxx
 MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
 // add your mongodb
 AUTO_REACT: process.env.AUTO_REACT || "true",
