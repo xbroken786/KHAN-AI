@@ -28,13 +28,19 @@ ANTI_BAD_WORDS: (process.env.ANTI_BAD_WORDS || "null,sax").split(','),
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 // make true or false status auto seen
 MODE: process.env.MODE || "public",
-// make bot public or private 
+// make bot public-private-inbox-group 
 ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 HEART_REACT: process.env.HEART_REACT || "true",
 // make this true or false for heart reactions only 
 OWNER_REACT: process.env.OWNER_REACT || "true",
   // make it true or fasle for only react on owner msg only 
+FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
+// make it true for auto recoding 
+AUTO_REPLY: process.env.AUTO_REPLY || "false",
+// make it true or fasle for auto reply 
+AUTO_STICKER: process.env.AUTO_STICKER || "false",    
+// make it true or fasle for auto sticker reply 
 AUTO_VOICE: process.env.AUTO_VOICE || "false"
-  // make auto voice false or true
+// make auto voice false or true
 };
