@@ -95,15 +95,9 @@
       "description": "Make it true if you only want react on Owner Massages.",
       "required": false,
       "value": "false"
+      
+    }, 
     
-    }, 
-
-    "SUDO_NB": {
-      "description": "type sudo number here if you want.",
-      "required": false,
-      "value": "923146190XXXX"
-    }, 
-
     "HEART_REACT": {
       "description": "Make it true if you want bot only heart 💜 emjois reaction .",
       "required": false,
