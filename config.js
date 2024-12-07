@@ -33,12 +33,6 @@ HEART_REACT: process.env.HEART_REACT || "true",
 // make this true or false for heart reactions only 
 OWNER_REACT: process.env.OWNER_REACT || "true",
   // make it true or fasle for only react on owner msg only 
-FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
+FAKE_RECORDING: process.env.FAKE_RECORDING || "true"
 // make it true for auto recoding 
-AUTO_REPLY: process.env.AUTO_REPLY || "false",
-// make it true or fasle for auto reply 
-AUTO_STICKER: process.env.AUTO_STICKER || "false",    
-// make it true or fasle for auto sticker reply 
-AUTO_VOICE: process.env.AUTO_VOICE || "false"
-// make auto voice false or true
 };
