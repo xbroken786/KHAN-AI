@@ -51,7 +51,7 @@ Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use
 <p align="left">
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHAN-AI&ports=3000;&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-green?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 
-> Enter Variable By Menuly Due To Koyeb New Update ⬇️ 
+* Enter Bellow Variable In Koyeb
 
 <details close>
 <summary>Click to Environment Variables:</summary>
@@ -62,46 +62,43 @@ Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use
 SESSION_ID
 ```
 ```
-AUTO_STATUS_SEEN
+PREFIX
 ```
 ```
-AUTO_DL
+ALIVE_MSG
 ```
 ```
-AUTO_READ
+ALIVE_IMG
 ```
 ```
-AUTO_TYPING
-```
-```
-AUTO_RECORDING
-```
-```
-ALWAYS_ONLINE
+AUTO_READ_STATUS
 ```
 ```
 AUTO_REACT
 ```
 ```
-AUTO_BLOCK
-```
-```
-REJECT_CALL
-```
-```
-NOT_ALLOW
+READ_MESSAGE
 ```
 ```
 MODE
 ```
 ```
-OWNER_NAME
+ANTI_LINK
 ```
 ```
-OWNER_NUMBER
+HEART_REACT
 ```
 ```
-WELCOME
+FAKE_RECORDING
+```
+```
+OWNER_REACT
+```
+```
+ANTI_BAD
+```
+```
+ANTI_BAD_WORDS
 ```
 </details>
 
