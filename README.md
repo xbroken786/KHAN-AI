@@ -49,7 +49,61 @@ Click on Paring Code To Get Seasion ID To Start The KHAN-MD If Getting Error Use
 **2. Koyeb**
   
 <p align="left">
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHANX-AI&ports=3000;http;/&env[SESSION_ID]=null&env[MODE]=public&env[AUTO_READ_STATUS]=true&env[SUDO_NB]=923448149931&env[ALIVE_IMG]=https://files.catbox.moe/hzagwo.jpg&env[AUTO_VOICE]=false&env[ALIVE_MSG]=KHAN-MD-IS-ALIVE&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-green?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHAN-AI&ports=3000;&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-green?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
+
+> Enter Variable By Menuly Due To Koyeb New Update ⬇️ 
+
+<details close>
+<summary>Click to Environment Variables:</summary>
+ 
+<br><br>
+
+```
+SESSION_ID
+```
+```
+AUTO_STATUS_SEEN
+```
+```
+AUTO_DL
+```
+```
+AUTO_READ
+```
+```
+AUTO_TYPING
+```
+```
+AUTO_RECORDING
+```
+```
+ALWAYS_ONLINE
+```
+```
+AUTO_REACT
+```
+```
+AUTO_BLOCK
+```
+```
+REJECT_CALL
+```
+```
+NOT_ALLOW
+```
+```
+MODE
+```
+```
+OWNER_NAME
+```
+```
+OWNER_NUMBER
+```
+```
+WELCOME
+```
+</details>
 
 **3. Railway**
 
@@ -101,4 +155,14 @@ Stay connected with the latest updates and community by joining our official Wha
 <p style="text-align: center; font-size: 1.2em;">
   Not For Sale - If any plugin's code is obfuscated, you do not have permission to edit it in any form. Please remember to give credit if you are using or re-uploading my plugins/files. Wishing you a wonderful day ahead!</p>
   
----    
+---   
+
+ <br>
+<h2 align="center"> ⚠️ Warning ⚠️
+ </h2>
+ 
+<h3 align="center"> Don't Copy Without Permission 
+</h3>
+
+<br>
+
