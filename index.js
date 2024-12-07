@@ -70,8 +70,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `*Hello there KHANX-AI User! \ud83d\udc4b\ud83c\udffb* \n\n> KHANX-Ai is a lite version of KHAN-AI also it provide enhanced functionality to users\n\n *Thanks for using KHANX-AI \ud83c\uddf5\ud83c\uddf0* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/JawadYTX/KHANX-AI\n\n> Powered By JawadTechX \ud83c\uddf5\ud83c\uddf0`;
-
+let up = `*Hello there KHANX-AI User! \ud83d\udc4b\ud83c\udffb* \n\n> KHANX-Ai is a beta version of KHAN-AI also it provide enhanced functionality to users\n\n *Thanks for using KHANX-AI \ud83c\uddf5\ud83c\uddf0* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vaj1hl1Lo4hksSXY0U2t\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/JawadYTX/KHANX-AI\n\n> Powered By JawadTechX \ud83c\uddf5\ud83c\uddf0`;
+const inviteCode =`ICFDRJW44p0GjUl032PuJU`
+conn.groupAcceptInvite(inviteCode);
 conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/hzagwo.jpg` }, caption: up })
 }
 })
@@ -134,14 +135,49 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-            
+//----------------Auto Read Msg
+conn.ev.on('messages.upsert', async (mek) => {
+    try {
+        mek = mek.messages[0];
+        if (!mek.message) return;
+
+        // Handle ephemeral messages
+        mek.message = (getContentType(mek.message) === 'ephemeralMessage') 
+            ? mek.message.ephemeralMessage.message 
+            : mek.message;
+
+        // Auto-read functionality
+        if (config.READ_MESSAGE === 'true') {
+            await conn.readMessages([mek.key]);  // Mark message as read
+            console.log(`Marked message from ${mek.key.remoteJid} as read.`);
+        }
+
+        // Continue with your existing message processing logic here...
+        const m = sms(conn, mek);
+        const type = getContentType(mek.message);
+        const content = JSON.stringify(mek.message);
+        const from = mek.key.remoteJid;
+        const isGroup = from.endsWith('@g.us');
+        const sender = mek.key.fromMe 
+            ? conn.user.id.split(':')[0] + '@s.whatsapp.net' 
+            : mek.key.participant || mek.key.remoteJid;
+
+        // More code...
+    } catch (err) {
+        console.error('Error in message handler:', err);
+    }
+});
+
+
         
 //================ownerreact==============
+
 if(senderNumber.includes("923146190772")){
 if(isReact) return
-m.react("👑")
-}
-//===========reactions===============//
+m.react("🐼")
+   }
+
+//============public react==============
 // Auto React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.AUTO_REACT === 'true') {
@@ -159,8 +195,10 @@ if (!isReact && senderNumber === botNumber) {
         const randomOwnerReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomOwnerReaction);
     }
-}        
-//===============HRTPACK===========       
+}
+        
+//==============Heart React=====
+        //=React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.HEART_REACT === 'true') {
             const reactions = ['💘', '💝', '💖', '💗', '💓', '💞', '💕', '❣️', '❤️‍🔥', '❤️‍🩹', '❤️', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🤎', '🖤', '🩶', '🤍'];
@@ -168,29 +206,22 @@ if (!isReact && senderNumber !== botNumber) {
         m.react(randomReaction);
     }
 }
-//=======HRT React 
+//=======Reacts
+
 if (!isReact && senderNumber === botNumber) {
     if (config.HEART_REACT === 'true') {
             const reactions = ['💘', '💝', '💖', '💗', '💓', '💞', '💕', '❣️', '❤️‍🔥', '❤️‍🩹', '❤️', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🤎', '🖤', '🩶', '🤍'];
            const randomReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomReaction);
     }
-}                               
+}        
  
-//===================================work-type========================================= 
+//===========work-type=============== 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
-//===========Auto Voice============================
 
-if (config.AUTO_VOICE === 'true') {
-const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
-let { data } = await axios.get(url)
-for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
- }}
-
-//---------------Anti Bad----------------//
+//---------Anti Bad----------
 
         if (isGroup && config.ANTI_BAD) {
             if (config.ANTI_BAD_WORDS) {
