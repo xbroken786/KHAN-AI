@@ -1,8 +1,8 @@
 const {cmd , commands} = require('../command')
 
 cmd({
-    pattern: "menu",
-    alias: ["allmenu","listcmd","commands"],
+    pattern: "allmenu",
+    alias: "menu2",
     desc: "menu the bot",
     category: "menu",
     react: "⚡",
