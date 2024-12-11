@@ -1,5 +1,5 @@
-const config = require('../config')
-const { cmd, commands } = require('../command')
+const config = require('../config');
+const { cmd, commands } = require('../command');
 
 cmd({
     pattern: "ping",
@@ -10,13 +10,28 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '*Pinging ...*' })
-        const endTime = Date.now()
-        const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*⚡ Pong : ${ping}ms*` }, { quoted: message })
+        const startTime = Date.now();
+
+        // Calculate ping
+        const endTime = Date.now();
+        const ping = endTime - startTime;
+
+        // Send message
+        await conn.sendMessage(from, { 
+            text: ` *⚡ KHAN-AI SPEED : 0.${ping}ms*`, 
+            contextInfo: {
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363354023106228@newsletter',
+                    newsletterName: 'JawadTechX',
+                    serverMessageId: 144
+                }
+            }
+        }, { quoted: mek });
     } catch (e) {
-        console.log(e)
-        reply(`${e}`)
+        console.log(e);
+        reply(`An error occurred: ${e.message}`);
     }
-})
+});

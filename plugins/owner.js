@@ -1,4 +1,5 @@
 const { cmd } = require('../command');
+const config = require('../config');
 
 cmd({
     pattern: "owner",
@@ -9,8 +10,8 @@ cmd({
 }, 
 async (conn, mek, m, { from }) => {
     try {
-        const ownerNumber = '+923146190772';
-        const ownerName = 'KHANX-MD'; 
+        const ownerNumber = config.OWNER_NUMBER; // Fetch owner number from config
+        const ownerName = config.OWNER_NAME;     // Fetch owner name from config
 
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
@@ -26,28 +27,39 @@ async (conn, mek, m, { from }) => {
             }
         });
 
-        // Send the owner contact message
+        // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
-            text: `*☇━━━━━━━━━━━━━━┈⊷▷*
-   *Owner Contact Number  ⬆️* 
-> ★Bot Name : *KHANX-MD*
-> ★Owner Name : *${ownerName}*
-> *★ WhatsApp Channel ⤵️* 
-
-https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
-
-> *★GitHub Repo Link ⤵️* 
-
-https://github.com/JawadYTX/KHANX-AI
-*☇━━━━━━━━━━━━━━┈⊷▷*`,
+            image: { url: 'https://files.catbox.moe/149k8x.jpg' }, // Image URL from your request
+            caption: `╭━━〔 *KHANX-AI* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• *Here is the owner details*
+┃◈┃• *Owner Name* - ${ownerName}
+┃◈┃• *Owner Number* ${ownerNumber}
+┃◈┃• *Version*: 2.0.0
+┃◈└───────────┈⊷
+╰──────────────┈⊷
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
-                quotedMessageId: sentVCard.key.id 
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363354023106228@newsletter',
+                    newsletterName: 'JawadTechX',
+                    serverMessageId: 143
+                }            
             }
+        }, { quoted: mek });
+
+        // Send audio as per your request
+        await conn.sendMessage(from, {
+            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/contact.m4a' }, // Audio URL
+            mimetype: 'audio/mp4',
+            ptt: true
         }, { quoted: mek });
 
     } catch (error) {
         console.error(error);
-        await conn.sendMessage(from, { text: 'Sorry, there was an error fetching the owner contact.' }, { quoted: mek });
+        reply(`An error occurred: ${error.message}`);
     }
 });

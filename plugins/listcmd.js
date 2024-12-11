@@ -1,4 +1,4 @@
-const {cmd , commands} = require('../command')
+const { cmd, commands } = require('../command');
 
 cmd({
     pattern: "list",
@@ -7,12 +7,10 @@ cmd({
     category: "menu",
     react: "⚡",
     filename: __filename
-},
-
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-let dec = `╭━❮ DOWNLOAD CMD ❯━┈⊷*
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━❮ DOWNLOAD CMD ❯━┈⊷*
 ┃▸
 ┃▸📄 COMMAND: .play
 ┃▸❕ Download Audio from yt
@@ -123,15 +121,29 @@ let dec = `╭━❮ DOWNLOAD CMD ❯━┈⊷*
 ┃▸📄 COMMAND: .sticker
 ┃▸❕ convert photo to sticker
 ╰━━━━━━━━━━━━⪼
-╭━━❮ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ❯━┈⊷
-┃https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
-╰────────────────··๏
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`;
 
-await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/hzagwo.jpg`},caption:dec},{quoted:mek});
-    
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/248f8e.jpg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363354023106228@newsletter',
+                        newsletterName: 'JawadTechX',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});

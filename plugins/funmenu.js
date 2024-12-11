@@ -1,43 +1,36 @@
-const config = require('../config')
 const { cmd, commands } = require('../command');
-const os = require("os")
-const {runtime} = require('../lib/functions')
-const axios = require('axios')
 
 cmd({
-    pattern: "menu",
+    pattern: "funmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⚡",
+    react: "😎",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
-┃★╭──────────────
-┃★│ Owner : *${config.OWNER_NAME}*
-┃★│ Baileys : *Multi Device*
-┃★│ Type : *NodeJs*
-┃★│ Platform : *${os.hostname()}*
-┃★│ Mode : *[${config.MODE}]*
-┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *2.0.0 Bᴇᴛᴀ*
-┃★╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
-╭━━〔 *Menu List* 〕━━┈⊷
+
+        let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• aimenu
-┃◈┃• anmiemenu
-┃◈┃• convertmenu
-┃◈┃• funmenu
-┃◈┃• dlmenu
-┃◈┃• listcmd
-┃◈┃• mainmenu
-┃◈┃• groupmenu
-┃◈┃• allmenu
-┃◈┃• ownermenu
-┃◈┃• othermenu
-┃◈┃• repo
+┃◈┃• insult
+┃◈┃• hack
+┃◈┃• joke
+┃◈┃• hrt
+┃◈┃• hpy
+┃◈┃• syd
+┃◈┃• anger
+┃◈┃• shy
+┃◈┃• kiss
+┃◈┃• mon
+┃◈┃• cunfuzed
+┃◈┃• setpp
+┃◈┃• hand
+┃◈┃• nikal
+┃◈┃• hold
+┃◈┃• hug
+┃◈┃• nikal
+┃◈┃• hifi
+┃◈┃• poke
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`;
@@ -45,7 +38,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/89xq3r.jpg` },
+                image: { url: `https://files.catbox.moe/x3bdmi.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],

@@ -1,43 +1,49 @@
-const config = require('../config')
 const { cmd, commands } = require('../command');
-const os = require("os")
-const {runtime} = require('../lib/functions')
-const axios = require('axios')
 
 cmd({
-    pattern: "menu",
+    pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⚡",
+    react: "⤵️",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
-┃★╭──────────────
-┃★│ Owner : *${config.OWNER_NAME}*
-┃★│ Baileys : *Multi Device*
-┃★│ Type : *NodeJs*
-┃★│ Platform : *${os.hostname()}*
-┃★│ Mode : *[${config.MODE}]*
-┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *2.0.0 Bᴇᴛᴀ*
-┃★╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
-╭━━〔 *Menu List* 〕━━┈⊷
+    try
+       {
+        let dec = `╭━━〔 *Group Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• aimenu
-┃◈┃• anmiemenu
-┃◈┃• convertmenu
-┃◈┃• funmenu
-┃◈┃• dlmenu
-┃◈┃• listcmd
-┃◈┃• mainmenu
-┃◈┃• groupmenu
-┃◈┃• allmenu
-┃◈┃• ownermenu
-┃◈┃• othermenu
-┃◈┃• repo
+┃◈┃• grouplink
+┃◈┃• add
+┃◈┃• remove
+┃◈┃• kick
+┃◈┃• promote 
+┃◈┃• demote
+┃◈┃• dismiss 
+┃◈┃• revoke
+┃◈┃• setgoodbye
+┃◈┃• setwelcome
+┃◈┃• delete 
+┃◈┃• getpic
+┃◈┃• ginfo
+┃◈┃• delete 
+┃◈┃• disappear on
+┃◈┃• disappear off
+┃◈┃• disappear 7D,24H
+┃◈┃• allreq
+┃◈┃• updategname
+┃◈┃• updategdesc
+┃◈┃• joinrequests
+┃◈┃• senddm
+┃◈┃• nikal
+┃◈┃• mute
+┃◈┃• unmute
+┃◈┃• lockgc
+┃◈┃• unlockgc
+┃◈┃• invite
+┃◈┃• tag
+┃◈┃• hidetag
+┃◈┃• tagall
+┃◈┃• tagadmins
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`;
@@ -45,7 +51,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/89xq3r.jpg` },
+                image: { url: `https://files.catbox.moe/uu5fh1.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
