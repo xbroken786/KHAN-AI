@@ -73,7 +73,7 @@ console.log('Bot connected to whatsapp ✅')
 let up = `*Hello there KHANX-AI User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet KHAN-AI WhatsApp Bot.\n\n *Thanks for using KHANX-AI \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/JawadYTX/KHANX-AI\n\n> © Powered BY JawadTechX \ud83d\udda4`;
 const inviteCode =`ICFDRJW44p0GjUl032PuJU`
 conn.groupAcceptInvite(inviteCode);
-conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/hzagwo.jpg` }, caption: up })
+conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/89xq3r.jpg` }, caption: up })
 }
 })
 conn.ev.on('creds.update', saveCreds)  
