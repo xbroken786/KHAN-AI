@@ -16,10 +16,10 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": false,
-      "value": "https://files.catbox.moe/hzagwo.jpg"
+      "value": "https://files.catbox.moe/x3bdmi.jpg"
     }, 
     
-    "ALIVE_MSG": {
+    "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
       "value": "> Zinda Hun Yar *KHAN-AI*⚡"
@@ -44,10 +44,31 @@
       "value": "true"
     }, 
 
+    "OWNER_NAME": {
+      "description": "Type Bot Owner Name.",
+      "required": false,
+      "value": "Jᴀᴡᴀᴅ TᴇᴄʜX"
+}, 
+
+    "OWNER_NUMBER": {
+      "description": "put the owner number for bot.",
+      "required": false,
+      "value": "92310344XXXX"
+
+    }, 
+
+    "BOT_NAME": {
+      "description": "Type here the bot name.",
+      "required": false,
+      "value": "KHANX-AI"
+
+      }, 
+
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
       "value": "true"
+      
     },
     
     "ANTI_BAD": {
@@ -64,8 +85,8 @@
 
     "FAKE_RECORDING": {
       "description": "Make it true if you want auto recoding.",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     },
 
     "AUTO_REACT": {
@@ -84,7 +105,7 @@
     "HEART_REACT": {
       "description": "Make it true if you want bot only heart 💜 emjois reaction .",
       "required": false,
-      "value": "true"
+      "value": "false"
     }, 
 
     "READ_MESSAGE": {
