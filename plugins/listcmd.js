@@ -12,7 +12,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let dec = `╭━━❮ DOWNLOAD COMMANDS ❯━┈⊷*
+let dec = `╭━❮ DOWNLOAD CMD ❯━┈⊷*
 ┃▸
 ┃▸📄 COMMAND: .play
 ┃▸❕ Download Audio from yt
@@ -48,13 +48,13 @@ let dec = `╭━━❮ DOWNLOAD COMMANDS ❯━┈⊷*
 ┃▸❕ Download full episode video
 ╰━━━━━━━━━━━━⪼ 
 
-╭━━❮ SEARCH COMMANDS ❯━┈⊷*
+╭━━❮ SEARCH CMD ❯━┈⊷*
 ┃▸
 ┃▸📄 COMMAND: .yts
 ┃▸❕ Serch videos from yt
 ╰━━━━━━━━━━━━⪼  
 
-╭━━❮‍ MAIN COMMANDS ❯━┈⊷*
+╭━━❮‍ MAIN CMD ❯━┈⊷*
 ┃▸
 ┃▸📄 COMMAND: .alive
 ┃▸❕ Check online or not
