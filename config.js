@@ -9,7 +9,7 @@ SESSION_ID: process.env.SESSION_ID || "",
 // add your Session Id 
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot
-BOT_NAME: process.env.BOT_NAME || ".",
+BOT_NAME: process.env.BOT_NAME || "KHANX-AI",
 // add bot namw here for menu
 OWNER_NUMBER: process.env.OWNER_NUMBER || "92342758XXXX",
 // add your bot owner number
