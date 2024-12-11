@@ -1,16 +1,16 @@
 <p align="center">
-  <h1 align="center">KHANX-AI 1.0</h1>
+  <h1 align="center">KHANX-AI 2.0</h1>
 </p>
 
-> **`Updating` More Features**
+> **`Updated` The Version 2.0**
 
 <p align="center">
-  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=KHANX-AI-+v1+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
+  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=KHANX-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
 </p>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-<a><img src='https://files.catbox.moe/hzagwo.jpg'/></a>
+<a><img src='https://files.catbox.moe/89xq3r.jpg'/></a>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
