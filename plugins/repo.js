@@ -12,15 +12,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let dec = `*Hello there KHANX-AI User! 👋🏻* 
 
-> KHANX-Ai is a beta version of KHAN-AI also it provides enhanced functionality to users
+> Simple , Straight Forward But Loaded With Features 🎊, Meet KHAN-AI WhatsApp Bot.
 
-*Thanks for using KHAN-MD 🇵🇰* 
+*Thanks for using KHAN-AI 🚩* 
 
-> Join WhatsApp Channel :- ⤵️
- 
-https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j
-
-Don't forget to give a star to the repo ⬇️
+> Don't forget to frok the repo ⤵️
 
 https://github.com/JawadYTX/KHANX-AI`;
 
