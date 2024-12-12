@@ -33,8 +33,8 @@ async (conn, mek, m, { from }) => {
             caption: `╭━━〔 *KHANX-AI* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
-┃◈┃• *Owner Name* - ${ownerName}
-┃◈┃• *Owner Number* ${ownerNumber}
+┃◈┃• *Name* - ${ownerName}
+┃◈┃• *Number* ${ownerNumber}
 ┃◈┃• *Version*: 2.0.0
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
