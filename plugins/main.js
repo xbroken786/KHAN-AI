@@ -14,14 +14,15 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 *KHANX-AI* 〕━━━┈⊷
+        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
 ┃★╭──────────────
-┃★│ Owner : *Jᴀᴡᴀᴅ TᴇᴄʜX*
+┃★│ Owner : *${config.OWNER_NAME}*
 ┃★│ Baileys : *Multi Device*
 ┃★│ Type : *NodeJs*
 ┃★│ Platform : *Heroku*
-┃★│ Prefix : *[ Multi Prefix ]*
-┃★│ Version : *1.0.0 Bᴇᴛᴀ*
+┃★│ Mode : *[${config.MODE}]*
+┃★│ Prifix : *[${config.PREFIX}]*
+┃★│ Version : *2.0.0 Bᴇᴛᴀ*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Download Menu* 〕━━┈⊷
