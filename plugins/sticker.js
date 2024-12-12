@@ -14,7 +14,7 @@ else descg = 'ɪᴛ ᴄᴏɴᴠᴇʀᴛs ʏᴏᴜʀ ʀᴇᴘʟɪᴇᴅ ᴘʜᴏ�
 cmd({
     pattern: 'sticker',
     react: '🤹‍♀️',
-    alias: ['s', 'stic'],
+    alias: ['s', 'ss', 'stic'],
     desc: descg,
     category: 'convert',
     use: '.sticker <Reply to image>',
