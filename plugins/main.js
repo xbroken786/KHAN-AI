@@ -36,6 +36,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• img
 ┃◈┃• play
 ┃◈┃• play2
+┃◈┃• play3
 ┃◈┃• audio
 ┃◈┃• video
 ┃◈┃• video2
