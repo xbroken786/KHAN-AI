@@ -25,8 +25,6 @@ AUTO_REACT: process.env.AUTO_REACT || "false",
 // make this true or false for auto react on all msgs
 ANTI_BAD: process.env.ANTI_BAD || "false",
 // false or true for anti bad words
-ANTI_BAD_WORDS: (process.env.ANTI_BAD_WORDS || "null,venom").split(','),
-// add custom antu bad words 
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 // make true or false status auto seen
 MODE: process.env.MODE || "public",
