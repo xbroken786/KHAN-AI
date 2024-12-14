@@ -21,8 +21,6 @@ LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *KHAN-AI*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
-MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
-// add your mongodb
 AUTO_REACT: process.env.AUTO_REACT || "false",
 // make this true or false for auto react on all msgs
 ANTI_BAD: process.env.ANTI_BAD || "false",
@@ -35,10 +33,16 @@ MODE: process.env.MODE || "public",
 // make bot public-private-inbox-group 
 ANTI_LINK: process.env.ANTI_LINK || "false",
 // make anti link true,false for groups 
+AUTO_VOICE: process.env.AUTO_VOICE || "false",
+// make true for send automatic voices
+AUTO_STICKER: process.env.AUTO_STICKER || "false",
+// make true for automatic stickers 
+AUTO_REPLY: process.env.AUTO_REPLY || "false",
+// make true or false automatic text reply 
 HEART_REACT: process.env.HEART_REACT || "false",
 // make this true or false for heart reactions only 
 OWNER_REACT: process.env.OWNER_REACT || "false",
-  // make it true or fasle for only react on owner msg only 
+// make it true or fasle for only react on owner msg only 
 FAKE_RECORDING: process.env.FAKE_RECORDING || "false"
 // make it true for auto recoding 
 };
