@@ -21,8 +21,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• neko
 ┃◈┃• maid
 ┃◈┃• loli
-┃◈┃• ronaldo
 ┃◈┃• animegirl
+┃◈┃• animegirl
+┃◈┃• animegirl1
+┃◈┃• animegirl2
+┃◈┃• animegirl3
+┃◈┃• animegirl4
+┃◈┃• animegirl5
+┃◈┃• anime1
 ┃◈┃• anime1
 ┃◈┃• anime2
 ┃◈┃• anime3
