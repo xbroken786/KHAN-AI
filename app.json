@@ -90,16 +90,10 @@
       
     },
     
-    "AntiBad": {
+    "ANTI_BAD": {
       "description": "Make it true if you want bot auto delete bad words.",
       "required": false,
       "value": "false"
-    }, 
-    
-    "AntiBad_List": {
-      "description": "type here the bad words you want auto delete like this venom,null.",
-      "required": false,
-      "value": "null,venom"
     }, 
 
     "FAKE_RECORDING": {
