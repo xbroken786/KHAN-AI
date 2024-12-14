@@ -201,7 +201,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• insult
 ┃◈┃• save
 ┃◈┃• wikipedia
-┃◈┃• mon
+┃◈┃• gpass
+┃◈┃• githubstalk
 ┃◈┃• yts
 ┃◈┃• ytv
 ┃◈└───────────┈⊷
