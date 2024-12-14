@@ -8,40 +8,48 @@ fetchLatestBaileysVersion,
 Browsers
 } = require('@whiskeysockets/baileys')
 
+
+const l = console.log
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
+const ff = require('fluent-ffmpeg')
 const P = require('pino')
 const config = require('./config')
 const qrcode = require('qrcode-terminal')
+const StickersTypes = require('wa-sticker-formatter')
 const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '.'
+const { fromBuffer } = require('file-type')
+const bodyparser = require('body-parser')
+const { tmpdir } = require('os')
+const Crypto = require('crypto')
+const path = require('path')
+const prefix = config.PREFIX
 
 const ownerNumber = ['923146190772']
 
 //===================SESSION-AUTH============================
-
-if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
+if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
 const sessdata = config.SESSION_ID
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
-fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
+fs.writeFile(__dirname + '/sessions/creds.json', data, () => {
 console.log("Session downloaded ✅")
 })})}
 
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 9090;
 
 //=============================================
 
 async function connectToWA() {
 console.log("Connecting KHANX AI BOT ⏳️...");
-const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
+const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
 var { version } = await fetchLatestBaileysVersion()
 
 const conn = makeWASocket({
@@ -77,7 +85,9 @@ conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/89xq3r.
 }
 })
 conn.ev.on('creds.update', saveCreds)  
-
+        
+//=============readstatus=======
+      
 conn.ev.on('messages.upsert', async(mek) => {
 mek = mek.messages[0]
 if (!mek.message) return	
@@ -113,7 +123,7 @@ const isReact = m.message.reactionMessage ? true : false
 const reply = (teks) => {
 conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
-
+        
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               let mime = '';
               let res = await axios.head(url)
@@ -135,7 +145,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-//----------------Auto Read Msg
+//Auto Read Msg
 conn.ev.on('messages.upsert', async (mek) => {
     try {
         mek = mek.messages[0];
@@ -174,10 +184,9 @@ conn.ev.on('messages.upsert', async (mek) => {
 
 if(senderNumber.includes("923146190772")){
 if(isReact) return
-m.react("🐼")
-   }
-
-//============public react==============
+m.react("👑")
+}
+//==========public react============//
 // Auto React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.AUTO_REACT === 'true') {
@@ -197,8 +206,8 @@ if (!isReact && senderNumber === botNumber) {
     }
 }
         
-//==============Heart React=====
-        //=React 
+//======HEART REACTIONS =======
+//=======HRT React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.HEART_REACT === 'true') {
             const reactions = ['💘', '💝', '💖', '💗', '💓', '💞', '💕', '❣️', '❤️‍🔥', '❤️‍🩹', '❤️', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🤎', '🖤', '🩶', '🤍'];
@@ -206,8 +215,7 @@ if (!isReact && senderNumber !== botNumber) {
         m.react(randomReaction);
     }
 }
-//=======Reacts
-
+//=======HEART React 
 if (!isReact && senderNumber === botNumber) {
     if (config.HEART_REACT === 'true') {
             const reactions = ['💘', '💝', '💖', '💗', '💓', '💞', '💕', '❣️', '❤️‍🔥', '❤️‍🩹', '❤️', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🤎', '🖤', '🩶', '🤍'];
@@ -215,33 +223,13 @@ if (!isReact && senderNumber === botNumber) {
         m.react(randomReaction);
     }
 }        
- 
-//===========work-type=============== 
+//==========WORKTYPE============ 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
-if(!isOwner && !isGroup && config.MODE === "groups") return
-
-//---------Anti Bad----------
-
-        if (isGroup && config.ANTI_BAD) {
-            if (config.ANTI_BAD_WORDS) {
-                const badWords = config.ANTI_BAD_WORDS;
-                const bodyLower = body.toLowerCase();
-
-                // Check if the sender is an admin or the bot itself
-                if (!isAdmins && !isOwner) {
-                    for (const word of badWords) {
-                        if (bodyLower.includes(word.toLowerCase())) {
-                            // Notify the group and delete the message
-                            await conn.sendMessage(from, { text: "🚩 Don't use any bad words!" }, { quoted: mek });
-                            await conn.sendMessage(from, { delete: mek.key });
-                            return; // Exit early if a bad word is found
-                        }
-                    }
-                }
-            }
-        }        
-
+if(!isOwner && isGroup && config.MODE === "groups") return
+ 
+// take commands 
+               
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
 if (isCmd) {
@@ -275,10 +263,11 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 
 })
 }
+
 app.get("/", (req, res) => {
-res.send("hey, khan started✅");
+res.send("KHAN-AI STARTED ✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
-}, 4000);  
+}, 4000);
