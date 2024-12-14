@@ -39,18 +39,21 @@ You'll need a session ID to run the KHAN-AI. Click the button below to obtain yo
 <br>
 ---
 
-### Deployment Methods 
+<h2 align="center">Deployment Section</h2>
 
 ---
 
-**1. Heroku**
+<h4 align="center">1. Heroku</h4>
+<p style="text-align: center; font-size: 1.2em;">
 
-<p align="left">
+
+<p align="center">
 <a href='https://dashboard.heroku.com/new?template=https://github.com/JawadYTX/KHANX-AI/tree/main' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-heroku ‎ deploy-brown?style=for-the-badge&logo=heroku&logoColor=white'/< width=150 height=28/p></a>
 
-**2. Koyeb**
+<h4 align="center">2. Koyeb</h4>
+<p style="text-align: center; font-size: 1.2em;">
   
-<p align="left">
+<p align="center">
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHAN-AI&ports=3000;&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-green?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 
 * Enter Manually Variable
@@ -104,37 +107,87 @@ ANTI_BAD_WORDS
 ```
 </details>
 
-**3. Koyeb**
+<h4 align="center">3. Koyeb</h4>
+<p style="text-align: center; font-size: 1.2em;">
 
-<p align="left">
+
+<p align="center">
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHAN-AI&ports=3000&env[SESSION_ID]&env[PREFIX]=.&env[AUTO_READ_STATUS]=true&env[AUTO_REACT]=true&env[OWNER_REACT]=true&env[HEART_REACT]=true&env[ANTI_LINK]=true&env[ANTI_BAD_WORDS]=xxx&env[FAKE_RECORDING]=false&env[READ_MESSAGE]=true&env[LIVE_MSG]=I%20AM%20ALIVE%20KHANX-AI%F0%9F%A4%98&env[OWNER_NUMBER]=92**********&env[OWNER_NAME]=JAWADYT&env[ALIVE_IMG]=https://files.catbox.moe/x3bdmi.jpg;&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-pink?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 
-**4. Railway**
+<h4 align="center">4. Railway</h4>
+<p style="text-align: center; font-size: 1.2em;">
 
-<p align="left">
+<p align="center">
 <a href='https://railway.app/new' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-railway deploy-red?style=for-the-badge&logo=railway&logoColor=white'/< width=150 height=28/p></a>
 
-**5. Render**
+<h4 align="center">5. Render</h4>
+<p style="text-align: center; font-size: 1.2em;">
   
-<p align="left">
+<p align="center">
 <a href='https://dashboard.render.com/web/new' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Render deploy-black?style=for-the-badge&logo=render&logoColot=white'/< width=150 height=28/p></a>
 
-**6. Netlify**
+<h4 align="center">6. Netlify</h4>
+<p style="text-align: center; font-size: 1.2em;">
   
-<p align="left">
+<p align="center">
 <a href='https://app.netlify.com/' target="_blank"><img alt='Netlify' src='https://img.shields.io/badge/-Netlify Deploy-blue?style=for-the-badge&logo=netlify&logoColor=white'/< width=150 height=28/p></a> </a>
 
-**7. Replit**
+<h4 align="center">7. Replit</h4>
+<p style="text-align: center; font-size: 1.2em;">
 
-<p align="left">
+<p align="center">
 <a href='https://replit.com/~' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Replit Deploy-blue?style=for-the-badge&logo=replit&logoColor=white'/< width=150 height=28/p></a> </a>
  
- **8. Workflow**
+ <h4 align="center">8. Workflow</h4>
+<p style="text-align: center; font-size: 1.2em;">
+
+
+<details>
+
+<summary align="center">Deploy On Workflow</summary>
+<p style="text-align: center; font-size: 1.2em;"> </p>
+
  
-<p align="left">
-  <a href='https://github.com/JawadYTX/KHANX-AI/blob/main/WORKFLOW.md' target="_blank">
-    <img alt='Workflow' src='https://img.shields.io/badge/-WorkFlow%20Deploy-blue?style=for-the-badge&logo=github&logoColor=white' width="150" height="28"/>
-  </a>
+<h9>Copy the workflow codes and then frok the repo edit config add session id then save and now click on repo action tag then click on start new workflow then paste workflow codes and name the file "deploy"</h9>
+<h3 align-"center"> Important</h3>
+<h6 align-"center">Attention! We do not take responsibility if your github account is suspended through this Deploy method, I advise you not to use this workflow deploy method in the latest github accounts, github accounts created a year or more ago have not received the risk of suspension so far, this works It will only be done for 6 hours, you need to update the code to reactivate it.</h6>
+
+```
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
+```
+</details> 
 
 ***
 
