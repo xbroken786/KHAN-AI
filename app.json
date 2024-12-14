@@ -96,6 +96,12 @@
       "value": "false"
     }, 
 
+     "FOOTERZ": {
+      "description": "add caption for menu and other",
+      "required": false,
+      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*"
+    },
+
     "FAKE_RECORDING": {
       "description": "Make it true if you want auto recoding.",
       "required": false,
