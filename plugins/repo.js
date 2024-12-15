@@ -10,7 +10,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `*Hello there KHANX-AI User! 👋🏻* 
+        let dec = `*Hello there KHAN-AI User! 👋🏻* 
 
 > Simple , Straight Forward But Loaded With Features 🎊, Meet KHAN-AI WhatsApp Bot.
 
@@ -18,7 +18,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 > Don't forget to frok the repo ⤵️
 
-https://github.com/JawadYTX/KHANX-AI`;
+https://github.com/JawadYTX/KHAN-AI`;
 
         await conn.sendMessage(from, { image: { url: `https://files.catbox.moe/x3bdmi.jpg` }, caption: dec, contextInfo: { mentionedJid: [m.sender], forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363354023106228@newsletter', newsletterName: 'JawadTechX', serverMessageId: 143 } } }, { quoted: mek });
 
