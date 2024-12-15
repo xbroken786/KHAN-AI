@@ -24,7 +24,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• restart
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.FOOTERZ}`;
+> ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
             from,
