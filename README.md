@@ -5,7 +5,7 @@
 > **`Updated` The Version 2.0**
 
 <p align="center">
-  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=KHANX-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
+  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=pink &center=true&vCenter=true&multiline=false&lines=KHANX-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
 </p>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
