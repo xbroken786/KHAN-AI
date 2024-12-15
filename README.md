@@ -1,11 +1,11 @@
 <p align="center">
-  <h1 align="center">KHANX-AI 2.0</h1>
+  <h1 align="center">KHAN-AI 2.0</h1>
 </p>
 
 > **`Updated` The Version 2.0**
 
 <p align="center">
-  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=pink &center=true&vCenter=true&multiline=false&lines=KHANX-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
+  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=pink &center=true&vCenter=true&multiline=false&lines=KHAN-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
 </p>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
@@ -27,7 +27,7 @@
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-  <a href="https://github.com/JawadYTX/KHANX-AI/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=blue&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/JawadYTX/KHAN-AI/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=blue&style=for-the-badge&logo=stackshare"></a>
   
 ### 2. Get Session ID 
 
@@ -35,7 +35,7 @@ You'll need a session ID to run the KHAN-AI. Click the button below to obtain yo
 
  > **Get Pair Code (Session ID)**
 
-<a href='https://khanx-pair.onrender.com' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-Blue?style=for-the-badge&logo=opencv&logoColor=black'/></a>
+<a href='https://KHAN-pair.onrender.com' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-Blue?style=for-the-badge&logo=opencv&logoColor=black'/></a>
 <br>
 ---
 
@@ -48,7 +48,7 @@ You'll need a session ID to run the KHAN-AI. Click the button below to obtain yo
 
 
 <p align="center">
-<a href='https://dashboard.heroku.com/new?template=https://github.com/JawadYTX/KHANX-AI/tree/main' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-heroku ‎ deploy-brown?style=for-the-badge&logo=heroku&logoColor=white'/< width=150 height=28/p></a>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/JawadYTX/KHAN-AI/tree/main' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-heroku ‎ deploy-brown?style=for-the-badge&logo=heroku&logoColor=white'/< width=150 height=28/p></a>
 
 <h4 align="center">2. Koyeb</h4>
 <p style="text-align: center; font-size: 1.2em;">
@@ -112,7 +112,7 @@ ANTI_BAD_WORDS
 
 
 <p align="center">
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHAN-AI&ports=3000&env[SESSION_ID]&env[PREFIX]=.&env[AUTO_READ_STATUS]=true&env[AUTO_REACT]=true&env[OWNER_REACT]=true&env[HEART_REACT]=true&env[ANTI_LINK]=true&env[ANTI_BAD_WORDS]=xxx&env[FAKE_RECORDING]=false&env[READ_MESSAGE]=true&env[LIVE_MSG]=I%20AM%20ALIVE%20KHANX-AI%F0%9F%A4%98&env[OWNER_NUMBER]=92**********&env[OWNER_NAME]=JAWADYT&env[ALIVE_IMG]=https://files.catbox.moe/x3bdmi.jpg;&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-pink?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=JawadYTX/KHAN-AI&ports=3000&env[SESSION_ID]&env[PREFIX]=.&env[AUTO_READ_STATUS]=true&env[AUTO_REACT]=true&env[OWNER_REACT]=true&env[HEART_REACT]=true&env[ANTI_LINK]=true&env[ANTI_BAD_WORDS]=xxx&env[FAKE_RECORDING]=false&env[READ_MESSAGE]=true&env[LIVE_MSG]=I%20AM%20ALIVE%20KHAN-AI%F0%9F%A4%98&env[OWNER_NUMBER]=92**********&env[OWNER_NAME]=JAWADYT&env[ALIVE_IMG]=https://files.catbox.moe/x3bdmi.jpg;&builder=dockerfile' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-pink?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 
 <h4 align="center">4. Railway</h4>
 <p style="text-align: center; font-size: 1.2em;">
