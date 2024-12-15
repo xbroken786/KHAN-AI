@@ -31,7 +31,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• jid
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.FOOTERZ}`;
+> ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
             from,
