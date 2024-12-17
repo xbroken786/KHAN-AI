@@ -102,6 +102,12 @@
       "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*"
     },
 
+      "DELETE_LINKS": {
+      "description": "remove links from group automatically without removing member",
+      "required": false,
+      "value": "false"
+    },
+    
     "FAKE_RECORDING": {
       "description": "Make it true if you want auto recoding.",
       "required": false,
