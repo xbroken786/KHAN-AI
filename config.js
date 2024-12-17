@@ -11,6 +11,8 @@ PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot
 BOT_NAME: process.env.BOT_NAME || "KHAN-AI",
 // add bot namw here for menu
+DELETE_LINKS: process.env.DELETE_LINKS || "false",
+// automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "92342758XXXX",
 // add your bot owner number
 OWNER_NAME: process.env.OWNER_NAME || "Jᴀᴡᴀᴅ TᴇᴄʜX",
@@ -31,7 +33,7 @@ AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 // make true or false status auto seen
 MODE: process.env.MODE || "public",
 // make bot public-private-inbox-group 
-ANTI_LINK: process.env.ANTI_LINK || "false",
+ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 AUTO_VOICE: process.env.AUTO_VOICE || "false",
 // make true for send automatic voices
