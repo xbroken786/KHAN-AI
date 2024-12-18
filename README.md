@@ -27,15 +27,6 @@
 
  <p align="center"><img src="https://profile-counter.glitch.me/{KHAN-MD}/count.svg" alt="JawadYTX :: Visitor's Count" old_src="https://profile-counter.glitch.me/{JawadYTX}/count.svg" /></p>
 
-  <p align="center">
-<a href="https://github.com/JawadYTX/followers"><img title="Followers" src="https://img.shields.io/github/followers/JawadYTX?color=blue&style=flat-square"></a>
-<a href="https://github.com/JawadYTX/KHAN-AI/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/JawadYTX/KHAN-AI?color=blue&style=flat-square"></a>
-<a href="https://github.com/JawadYTX/KHAN-AI/network/members"><img title="Forks" src="https://img.shields.io/github/forks/JawadYTX/KHAN-AI?color=blue&style=flat-square"></a>
-<a href="https://github.com/JawadYTX/KHAN-AI/"><img title="Size" src="https://img.shields.io/github/repo-size/JawadYTX/KHAN-AI?style=flat-square&color=green"></a>
-<a href="https://github.com/JawadYTX/KHAN-AI/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
-</p>
-<p align='center'>
-</p>
 
 <p align="center">
 <a href="https://github.com/JawadYTX/KHAN-AI"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=English&style=flat-square&color=blue"></a> &nbsp;
@@ -44,7 +35,7 @@
 </p> 
 
 <p align="center">
-  <a href="https://github.com/alien-Alfa"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v2.0-cyan.svg?style=for-the-badge&logo=appveyor" /></a>
+  <a href="https://github.com/JawadYTX/KHAN-AI"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v2.0-cyan.svg?style=for-the-badge&logo=appveyor" /></a>
 </p>
 
 
@@ -58,12 +49,20 @@ Start by forking this repository to your own GitHub account. Click the button be
   
 ### 2. Get Session ID 
 
-You'll need a session ID to run the KHAN-AI. Click the button below to obtain your session ID.if any error in loading site try vpn:
+You will need a session ID to run the KHAN-AI. Click the button below to obtain your session ID.if any error in loading site try vpn:
 
- > **Get Pair Code (Session ID)**
+ > **Get Pair Code 1 (Session ID)**
 
 <a href='https://KHAN-pair.onrender.com' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-Blue?style=for-the-badge&logo=opencv&logoColor=black'/></a>
 <br>
+
+> **Get Pair Code 2 (Session ID)**
+
+<a href='https://web-we4novi3uhwk.up-de-fra1-k8s-1.apps.run-on-seenode.com/' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-FFA500?style=for-the-badge&logo=opencv&logoColor=black'/>
+</a>
+<br> 
+
 ---
 
 <h2 align="center">Deployment Section</h2>
@@ -217,6 +216,19 @@ jobs:
 
 ***
 
+## 🔗 KHAN-AI INFO
+
+  <p align="center">
+<a href="https://github.com/JawadYTX/followers"><img title="Followers" src="https://img.shields.io/github/followers/JawadYTX?color=blue&style=flat-square"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/JawadYTX/KHAN-AI?color=blue&style=flat-square"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/network/members"><img title="Forks" src="https://img.shields.io/github/forks/JawadYTX/KHAN-AI?color=blue&style=flat-square"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/"><img title="Size" src="https://img.shields.io/github/repo-size/JawadYTX/KHAN-AI?style=flat-square&color=green"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+</p>
+<p align='center'>
+</p>
+
+
 ## 🌐 WhatsApp Channel 
 
 Stay connected with the latest updates and community by joining our official WhatsApp group and channel. You can also contact the owner directly.
@@ -225,7 +237,7 @@ Stay connected with the latest updates and community by joining our official Wha
 
 ***
 
-<h2 align="left">Reminder ⚠️</h2>
+<h2 align="left"> ⚠️Reminder</h2>
 <p style="text-align: center; font-size: 1.2em;">
 
 - **Disclaimer:** This bot is not affiliated with `WhatsApp Inc.`. Use it at your own risk.
@@ -234,11 +246,11 @@ Stay connected with the latest updates and community by joining our official Wha
 
 ---
 
-<h2 align="left">Notice ℹ️</h2>
+<h2 align="left">ℹ️ Notice</h2>
 <p style="text-align: center; font-size: 1.2em;">
   Not For Sale - If any plugin's code is obfuscated, you do not have permission to edit it in any form. Please remember to give credit if you are using or re-uploading my plugins/files. Wishing you a wonderful day ahead!</p>
   
----   
+---
 
  <br>
 <h2 align="center"> ⚠️ Warning ⚠️
