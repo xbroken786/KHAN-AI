@@ -17,7 +17,7 @@
 ***
 
 <p align="center">
-  <a href="https://github.com/JawadTechX"><img title="Developer" src="https://img.shields.io/badge/Author-Jawad%20TechX-blue.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/JawadYTX"><img title="Developer" src="https://img.shields.io/badge/Author-Jawad%20TechX-blue.svg?style=for-the-badge&logo=github" /></a>
 </p>
 
 <div align="center">
