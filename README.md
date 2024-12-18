@@ -4,11 +4,15 @@
 
 > **`Updated` The Version 2.0**
 
+---
+
 <p align="center">
-  <a href="https://github.com/JawadTechX"><img src="http://readme-typing-svg.herokuapp.com?color=pink &center=true&vCenter=true&multiline=false&lines=KHAN-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme"></a>
+  <a href="https://github.com/JawadTechX">
+    <img src="http://readme-typing-svg.herokuapp.com?color=FF0000&center=true&vCenter=true&multiline=false&lines=KHAN-AI-+v2.0+MultiDevice;Developed+by+JawadTechX;Give+star+and+forks+this+Repo+🌟" alt="JawadTechXReadme">
+  </a>
 </p>
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+--- 
 
 <a><img src='https://files.catbox.moe/149k8x.jpg'/></a>
 
@@ -237,7 +241,7 @@ Stay connected with the latest updates and community by joining our official Wha
 
 ***
 
-<h2 align="left"> ⚠️Reminder</h2>
+<h2 align="left">⚠️ Reminder</h2>
 <p style="text-align: center; font-size: 1.2em;">
 
 - **Disclaimer:** This bot is not affiliated with `WhatsApp Inc.`. Use it at your own risk.
@@ -252,12 +256,31 @@ Stay connected with the latest updates and community by joining our official Wha
   
 ---
 
+<h2 align="center">Team Section </h2>
+
+---
+
+### Thanks To Team ⤵️
+
+> KHAN-AI Owner 
+- [JawadTechX](https://github.com/JawadYTX)
+- Creater and Owner Of KHAN-AI
+> KHAN-AI Helpers 
+- [ROMEKTRICKS](https://github.com/ROMEKTRICKS)
+- For helping in bot plugin files.
+---
+
  <br>
 <h2 align="center"> ⚠️ Warning ⚠️
  </h2>
  
+ ---
+
 <h3 align="center"> Don't Copy Without Permission 
 </h3>
 
 <br>
 
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+------
