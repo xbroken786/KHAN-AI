@@ -256,7 +256,7 @@ Stay connected with the latest updates and community by joining our official Wha
   
 ---
 
-<h2 align="center">Team Section </h2>
+<h2 align="center">🔰Team Section🔰 </h2>
 
 ---
 
