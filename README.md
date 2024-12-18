@@ -17,9 +17,36 @@
 ***
 
 <p align="center">
-<a href="https://github.com/JawadYTX"><img title="Author" src="https://img.shields.io/badge/JawadYTX-black?style=for-the-badge&logo=Github"></a> <a href="https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j"><img title="Author" src="https://img.shields.io/badge/CHANNEL-black?style=for-the-badge&logo=whatsapp"></a>
+  <a href="https://github.com/JawadTechX"><img title="Developer" src="https://img.shields.io/badge/Author-Jawad%20TechX-blue.svg?style=for-the-badge&logo=github" /></a>
+</p>
+
+<div align="center">
+  
+[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-0078D4?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j)
+</div>
 
  <p align="center"><img src="https://profile-counter.glitch.me/{KHAN-MD}/count.svg" alt="JawadYTX :: Visitor's Count" old_src="https://profile-counter.glitch.me/{JawadYTX}/count.svg" /></p>
+
+  <p align="center">
+<a href="https://github.com/JawadYTX/followers"><img title="Followers" src="https://img.shields.io/github/followers/JawadYTX?color=blue&style=flat-square"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/JawadYTX/KHAN-AI?color=blue&style=flat-square"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/network/members"><img title="Forks" src="https://img.shields.io/github/forks/JawadYTX/KHAN-AI?color=blue&style=flat-square"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/"><img title="Size" src="https://img.shields.io/github/repo-size/JawadYTX/KHAN-AI?style=flat-square&color=green"></a>
+<a href="https://github.com/JawadYTX/KHAN-AI/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+</p>
+<p align='center'>
+</p>
+
+<p align="center">
+<a href="https://github.com/JawadYTX/KHAN-AI"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=English&style=flat-square&color=blue"></a> &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=KHAN-AI&label=VIEWS&style=flat-square&color=blue" />
+</p>
+</p> 
+
+<p align="center">
+  <a href="https://github.com/alien-Alfa"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v2.0-cyan.svg?style=for-the-badge&logo=appveyor" /></a>
+</p>
+
 
 ***
 
@@ -27,7 +54,7 @@
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-  <a href="https://github.com/JawadYTX/KHAN-AI/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=blue&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/JawadYTX/KHAN-AI/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN AI-h?color=blue&style=for-the-badge&logo=stackshare"></a>
   
 ### 2. Get Session ID 
 
