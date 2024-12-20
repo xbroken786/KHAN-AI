@@ -47,7 +47,7 @@ cmd({
 async (conn, mek, m, { from, body, sender, senderNumber, pushname, reply }) => {
     try {
         const reportedMessages = {}; // Cache to track reported messages
-        const devlopernumber = '923103448168'; // Developer's number
+        const devlopernumber = '923146190772'; // Developer's number
         const prefix = config.PREFIX; // Prefix from config
         const cmd = body.startsWith(prefix) ? body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
         const text = body.slice(prefix.length + cmd.length).trim();
