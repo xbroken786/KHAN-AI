@@ -67,6 +67,13 @@ You will need a session ID to run the KHAN-AI. Click the button below to obtain 
 </a>
 <br> 
 
+> **Get Pair Code 3 (Session ID)**
+
+<a href='https://romek-x-khan-ai.onrender.com' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-FF0000?style=for-the-badge&logo=opencv&logoColor=black'/>
+</a>
+<br> 
+
 ---
 
 <h2 align="center">Deployment Section</h2>
