@@ -82,27 +82,18 @@ async (conn, mek, m, { from, body, isOwner }) => {
     }
 });
 
-// Unavailable (Always Offline)
-
-cmd({
-    on: "body"
-},    
-async (conn, mek, m, { from, body, isOwner }) => {
-    if (config.ALWAYS_OFFLINE === 'true') {
-        await conn.sendPresenceUpdate('unavailable', from); // Set offline explicitly
-    }
-});
-
 //  Always Online / Available
+
 cmd({
-    on: "body"
-},    
-async (conn, mek, m, { from, body, isOwner }) => {
-    if (config.ALWAYS_ONLINE === 'true') {
-        await conn.sendPresenceUpdate('available', from); // Explicitly show online
-    } else {
-        await conn.sendPresenceUpdate('unavailable', from); // Explicitly set to offline
-    }
+  on: "body"
+}, async (conn, mek, m, { from, body, isOwner }) => {
+  if (config.ALWAYS_ONLINE === "true") {
+    // Send presence update as "available" if ALWAYS_ONLINE is true
+    await conn.sendPresenceUpdate("available", from);
+  } else {
+    // Send presence update as "unavailable" otherwise
+    await conn.sendPresenceUpdate("unavailable", from);
+  }
 });
 
 // Current (Idle/Neutral)
