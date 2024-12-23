@@ -82,26 +82,49 @@ async (conn, mek, m, { from, body, isOwner }) => {
     }
 });
 
-//  Always Online / Available
 
+// Always Online
 cmd({
   on: "body"
-}, async (conn, mek, m, { from, body, isOwner }) => {
-  if (config.ALWAYS_ONLINE === "true") {
-    // Send presence update as "available" if ALWAYS_ONLINE is true
-    await conn.sendPresenceUpdate("available", from);
-  } else {
-    // Send presence update as "unavailable" otherwise
-    await conn.sendPresenceUpdate("unavailable", from);
+}, async (conn, mek, m, { from, isOwner }) => {
+  try {
+    if (config.ALWAYS_ONLINE === "true") {
+      // Always Online Mode: Bot always appears online (double tick)
+      await conn.sendPresenceUpdate("available", from);
+    } else {
+      // Dynamic Mode: Adjust presence based on owner's status
+      if (isOwner) {
+        // If the owner is online, show as available (double tick)
+        await conn.sendPresenceUpdate("available", from);
+      } else {
+        // If the owner is offline, show as unavailable (single tick)
+        await conn.sendPresenceUpdate("unavailable", from);
+      }
+    }
+  } catch (e) {
+    console.log(e);
   }
 });
 
-// Current (Idle/Neutral)
+// Public Mod
 cmd({
-    on: "body"
-},    
-async (conn, mek, m, { from, body, isOwner }) => {
-    if (config.CURRENT_STATUS === 'true') {
-        await conn.sendPresenceUpdate('null', from); // Null state (idle or default)
+  on: "body"
+}, async (conn, mek, m, { from, isOwner }) => {
+  try {
+    if (config.ALWAYS_ONLINE === "true") {
+      // Public Mode + Always Online: Always show as online
+      await conn.sendPresenceUpdate("available", from);
+    } else if (config.PUBLIC_MODE === "true") {
+      // Public Mode + Dynamic: Respect owner's presence
+      if (isOwner) {
+        // If owner is online, show available
+        await conn.sendPresenceUpdate("available", from);
+      } else {
+        // If owner is offline, show unavailable
+        await conn.sendPresenceUpdate("unavailable", from);
+      }
     }
+  } catch (e) {
+    console.log(e);
+  }
 });
