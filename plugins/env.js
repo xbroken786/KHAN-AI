@@ -39,7 +39,6 @@ async (conn, mek, m, { from, quoted, reply }) => {
 ┇๏ *Auto Typing:* ${isEnabled(config.AUTO_TYPING) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Auto Recording:* ${isEnabled(config.AUTO_RECORDING) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Always Online:* ${isEnabled(config.ALWAYS_ONLINE) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Always Offline:* ${isEnabled(config.ALWAYS_OFFLINE) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Currently Status:* ${isEnabled(config.CURRENT_STATUS) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Read Message:* ${isEnabled(config.READ_MESSAGE) ? "Enabled ✅" : "Disabled ❌"}
 ╰━━━━━━━━━━━━──┈⊷
