@@ -50,9 +50,7 @@ HEART_REACT: process.env.HEART_REACT || "false",
 OWNER_REACT: process.env.OWNER_REACT || "false",
 // make it true or fasle for only react on owner msg only 
 ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
-// maks true for always online 
-ALWAYS_OFFLINE: process.env.ALWAYS_OFFLINE || "false",
-//make true for always ofline 
+// maks true for always online or offline 
 CURRENT_STATUS: process.env.CURRENT_STATUS || "false",
 // make true for online ofline by app
 AUTO_TYPING: process.env.AUTO_TYPING || "false",
