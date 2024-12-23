@@ -38,20 +38,15 @@
       
     },
     
-    "ALWAYS_ONLINE": {
-      "description": "Make it true if want automatic voice reply .",
-      "required": false,
-      "value": "false"
-    }, 
     
-    "ALWAYS_OFFLINE": {
-      "description": "Make it true if want automatic voice reply .",
+    "ALWAYS_ONLINE": {
+      "description": "Make it true if want always online.",
       "required": false,
       "value": "false"
     }, 
     
     "CURRENT_STATUS": {
-      "description": "Make it true if want automatic voice reply .",
+      "description": "make it true if you to show your real last seen.",
       "required": false,
       "value": "false"
     }, 
