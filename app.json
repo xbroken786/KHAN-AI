@@ -1,5 +1,5 @@
 {
-  "name": "KHANX-AI",
+  "name": "KHAN-AI",
   "description": "Javascript WhatsApp bot made by Jᴀᴡᴀᴅ TᴇᴄʜX",
   "logo": "https://raw.githubusercontent.com/JawadYTX/KHAN-DATA/refs/heads/main/logo/KHAN.png",
   "keywords": ["khan-ai"],
@@ -98,7 +98,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "KHANX-AI"
+      "value": "KHAN-AI"
 
       }, 
 
