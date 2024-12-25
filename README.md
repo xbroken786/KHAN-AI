@@ -55,19 +55,7 @@ Start by forking this repository to your own GitHub account. Click the button be
 
 You will need a session ID to run the KHAN-AI. Click the button below to obtain your session ID.if any error in loading site try vpn:
 
- > **Get Pair Code 1 (Session ID)**
-
-<a href='https://KHAN-pair.onrender.com' target="_blank"><img alt='Pairing Code' src='https://img.shields.io/badge/Get Paring Code-Blue?style=for-the-badge&logo=opencv&logoColor=black'/></a>
-<br>
-
-> **Get Pair Code 2 (Session ID)**
-
-<a href='https://web-we4novi3uhwk.up-de-fra1-k8s-1.apps.run-on-seenode.com/' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-FFA500?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br> 
-
-> **Get Pair Code 3 (Session ID)**
+> **Get Pair Code (Session ID)**
 
 <a href='https://romek-x-khan-ai.onrender.com' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-FF0000?style=for-the-badge&logo=opencv&logoColor=black'/>
