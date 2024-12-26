@@ -1,9 +1,7 @@
 const axios = require('axios')
 const {cmd , commands} = require('../command')
-
-// Function to format mentions
+// ship command 
 const toM = (a) => '@' + a.split('@')[0];
-
 cmd({
     pattern: "ship",
     alias: ["cup", "love"],
@@ -35,28 +33,28 @@ async (conn, mek, m, { from, isGroup, groupMetadata, reply }) => {
             randomParticipant = participants[Math.floor(Math.random() * participants.length)];
         } while (randomParticipant === sender);
 
-        // Reply with the pairing
+        // Pairing message
         const message = `${toM(sender)} ❤️ ${toM(randomParticipant)}\nCongratulations 💖🍻`;
-        await conn.sendMessage(from, { 
-            text: message, 
-            mentions: [sender, randomParticipant],
+
+        // Send the message with contextInfo
+        await conn.sendMessage(from, {
+            text: message,
             contextInfo: {
-                mentionedJid: [m.sender], 
+                mentionedJid: [sender, randomParticipant], // Mention both users
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: "JawadTechX",
-                    serverMessageId: 143
-                }
-            }
+                    newsletterName: 'JawadTechX',
+                    serverMessageId: 143,
+                },
+            },
         });
     } catch (e) {
         console.error("Error in ship command:", e);
         reply("An error occurred while processing the command. Please try again.");
     }
 });
-
 // Insult
 
 cmd({
