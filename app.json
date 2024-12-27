@@ -152,11 +152,19 @@
       
     }, 
     
-    "HEART_REACT": {
-      "description": "Make it true if you want bot only heart 💜 emjois reaction .",
+    "CUSTOM_REACT": {
+      "description": "Make it true if you want custom reactions.",
       "required": false,
-      "value": "false"
+      "value": "true"
+      
     }, 
+    
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "put here custom react react emojis.",
+      "required": false,
+      "value": "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍"
+    }, 
+
 
     "READ_MESSAGE": {
       "description": "Make it true if you want bot read your all sms just now.",
