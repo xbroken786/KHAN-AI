@@ -57,8 +57,15 @@ You will need a session ID to run the KHAN-AI. Click the button below to obtain 
 
 > **Get Pair Code (Session ID)**
 
-<a href='https://romek-x-khan-ai.onrender.com' target="_blank">
+<a href='https://khan-ai-pairing.onrender.com' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-FF0000?style=for-the-badge&logo=opencv&logoColor=black'/>
+</a>
+<br> 
+
+> **Get Pair Code (Session ID)**
+
+<a href='https://khan-ai-pairingx.onrender.com' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-FF00FF?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
 
