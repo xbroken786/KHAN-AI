@@ -5,15 +5,15 @@ const { ytsearch, ytmp3, ytmp4 } = require('@dark-yasiya/yt-dl.js');
 // video2
 
 cmd({
-    pattern: "video2",
-    alias: ["ytv2", "ytvideo2", "ytdl"],
+    pattern: "song2",
+    alias: ["video2", "ytvideo", "ytdl"],
     react: "🎥",
-    desc: "Download Youtube video",
+    desc: "Download YouTube video with selectable quality",
     category: "main",
-    use: '.video < Yt url or Name >',
+    use: '.play4 <Yt url or Name>',
     filename: __filename
 },
-async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
+async (conn, mek, m, { from, prefix, quoted, q, reply, waitForReply }) => {
     try {
         if (!q) return await reply("Please provide a YouTube URL or Name");
 
@@ -21,10 +21,6 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
         if (yt.results.length < 1) return reply("No results found!");
 
         let yts = yt.results[0];
-        const quality = "360p"; // Set desired quality
-        const ytdl = await ytmp4(yts.url, quality);
-
-        if (!ytdl.download.url) return reply("Failed to get the download link!");
 
         let ytmsg = `╭━━━〔 *KHAN-MD* 〕━━━┈⊷
 ┃▸╭───────────
@@ -37,14 +33,21 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
 ┇๏ *Views* -  ${yts.views}
 ┇๏ *Author* -  ${yts.author.name}
 ┇๏ *Link* -  ${yts.url}
-╰━━❑━⪼
-> *© Pᴏᴡᴇʀᴇᴅ Bʏ KʜᴀɴX-Aɪ ♡*`;
+╰━━❑━⪼`;
 
         // Send video details
         await conn.sendMessage(from, { image: { url: yts.thumbnail || yts.image || '' }, caption: `${ytmsg}` }, { quoted: mek });
 
+        let quality = "360p"; // Directly set quality to 360p
+        const ytdl = await ytmp4(yts.url, quality);
+        if (!ytdl.download.url) return reply("Failed to get the download link!");
+
         // Send video file
-        await conn.sendMessage(from, { video: { url: ytdl.download.url }, mimetype: "video/mp4", caption: `> *© Pᴏᴡᴇʀᴇᴅ Bʏ KʜᴀɴX-Aɪ ♡*` }, { quoted: mek });
+        await conn.sendMessage(from, {
+            video: { url: ytdl.download.url },
+            mimetype: "video/mp4",
+            caption: `> *${yts.title}*\n> *Quality: ${quality}*\n> *© Pᴏᴡᴇʀᴇᴅ Bʏ KʜᴀɴX-Aɪ ♡*`
+        }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(e.message || "An error occurred!");
@@ -55,7 +58,7 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
 
 cmd({
     pattern: "play2",
-    alias: ["audio2","song2","ytsong2"],
+    alias: ["audio2","ytdl2","ytsong2"],
     react: "🎶",
     desc: "Download Youtube song",
     category: "main",
